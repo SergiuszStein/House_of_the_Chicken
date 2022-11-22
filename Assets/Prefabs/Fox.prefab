@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2923590270932405895}
   - component: {fileID: 6667684828644542592}
   - component: {fileID: 7556815474137504456}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eye (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4020305959655683490}
   - component: {fileID: 3778328776354017049}
   - component: {fileID: 1110895118743110099}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 174517888466580921}
   - component: {fileID: 1444014515205972917}
   - component: {fileID: 7478953707869673528}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 8730365345485338281}
   - component: {fileID: 8120168786413909320}
   - component: {fileID: 6964176822596670820}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,6 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a396035c30032444884ecfa96870f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 10
+  _sniffRadius: 5
 --- !u!1 &7653022794560112532
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7646743104583160132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
