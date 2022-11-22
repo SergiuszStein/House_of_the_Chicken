@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2160.7021, g: 2264.834, b: 3288.2852, a: 1}
+  m_IndirectSpecularColor: {r: 2160.7021, g: 2264.9023, b: 3288.293, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -564,14 +564,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
-  m_LocalRotation: {x: 0.45053807, y: -0, z: -0, w: 0.89275724}
-  m_LocalPosition: {x: 0, y: 8.71, z: -5.83}
+  m_LocalRotation: {x: 0.42993098, y: -0.26691112, z: 0.1346991, w: 0.85192376}
+  m_LocalPosition: {x: 4.26, y: 8.71, z: -4.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 53.556, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 53.556, y: -34.792, z: 0}
 --- !u!114 &1823688468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,7 +765,7 @@ PrefabInstance:
     - target: {fileID: 8983892623015368489, guid: c4d0e430db3039d4d9cc95837199ad58,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.82
+      value: -1.96
       objectReference: {fileID: 0}
     - target: {fileID: 8983892623015368489, guid: c4d0e430db3039d4d9cc95837199ad58,
         type: 3}
@@ -775,7 +775,7 @@ PrefabInstance:
     - target: {fileID: 8983892623015368489, guid: c4d0e430db3039d4d9cc95837199ad58,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.92
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 8983892623015368489, guid: c4d0e430db3039d4d9cc95837199ad58,
         type: 3}
@@ -821,6 +821,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 106041626714091550, guid: 67fcc8a083354da40a35bd2293b19200,
+        type: 3}
+      propertyPath: _sniffRadius
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 6618034758979384174, guid: 67fcc8a083354da40a35bd2293b19200,
         type: 3}
       propertyPath: m_Name
