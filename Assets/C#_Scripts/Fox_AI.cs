@@ -11,8 +11,12 @@ public class Fox_AI : MonoBehaviour
 {
     [Header("GameObject")]
     private CharacterController _characterController;
-    
+
+    [Header("AI")]
+    [SerializeField] private bool _prioritizeFeathersFurtherAway;
+
     [Header("Variables")]
+    private Collider[] _feathers;
     [SerializeField] private float _speed;
     [SerializeField] private float _sniffRadius;
 
@@ -23,6 +27,23 @@ public class Fox_AI : MonoBehaviour
 
     private void Update()
     {
-        Physics.OverlapSphere(transform.position, _sniffRadius, LayerMask.NameToLayer("Feathers"));
+        _feathers = Physics.OverlapSphere(transform.position, _sniffRadius, LayerMask.NameToLayer("Feathers"));
+
+        List<Vector3> _featherDirections = new List<Vector3>();
+
+        if (_prioritizeFeathersFurtherAway)
+        {
+            for (int i = 0; i < _feathers.Length; i++)
+            {
+                _featherDirections.Add(_feathers[i].gameObject.transform.position - transform.position);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < _feathers.Length; i++)
+            {
+                _featherDirections.Add(Vector3.Normalize(_feathers[i].gameObject.transform.position - transform.position));
+            }
+        }
     }
 }
