@@ -30,8 +30,6 @@ public class Fox_Sniffing : MonoBehaviour
 
         for (int i = 0; i < _featherColliders.Length; i++)
         {
-            Ray _ray = new Ray(transform.position, (_featherColliders[i].gameObject.transform.position - transform.position));
-
             if (_featherColliders[i].gameObject.layer == LayerMask.NameToLayer("Feathers"))
             {
                 _feathers.Add(_featherColliders[i].gameObject.GetComponent<Feather>());
@@ -62,7 +60,5 @@ public class Fox_Sniffing : MonoBehaviour
         _smellDirection = Vector3.Normalize(_smellDirection);
 
         _smellDirection.y = 0;
-        
-        Debug.Log(_smellDirection);
     }
 }
