@@ -36,6 +36,15 @@ public class Fox_Sniffing : MonoBehaviour
             }
         }
 
+        for (int i = 0; i < _feathers.Count; i++)
+        {
+            Debug.DrawLine(
+                transform.position + new Vector3(0, 0.1f, 0),
+                _feathers[i].gameObject.transform.position - transform.position + new Vector3(0, 0.1f, 0),
+                Color.green, 0.1f
+            );
+        }
+
         List<Vector3> _featherDirections = new List<Vector3>();
 
         for (int i = 0; i < _feathers.Count; i++)
