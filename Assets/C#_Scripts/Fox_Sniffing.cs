@@ -24,7 +24,7 @@ public class Fox_Sniffing : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Physics.OverlapSphere(transform.position, _sniffRadius).Length);
+        _feathers = new List<Feather>();
         
         _featherColliders = Physics.OverlapSphere(transform.position, _sniffRadius);
 
@@ -60,5 +60,9 @@ public class Fox_Sniffing : MonoBehaviour
         }
 
         _smellDirection = Vector3.Normalize(_smellDirection);
+
+        _smellDirection.y = 0;
+        
+        Debug.Log(_smellDirection);
     }
 }

@@ -12,7 +12,7 @@ public class Feather : MonoBehaviour
         _smell = _lifeTime;
     }
     
-    void Update()
+    void LateUpdate()
     {
         _smell -= Time.deltaTime;
 
