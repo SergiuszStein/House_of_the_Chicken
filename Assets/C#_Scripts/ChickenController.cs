@@ -9,9 +9,10 @@ public class ChickenController : MonoBehaviour
     [SerializeField] private GameObject feather;
     private Vector3 lastPos;
     private Transform player;
-    [SerializeField] private float featherTime = 2;
-   // Start is called before the first frame update
-   void Awake()
+    [SerializeField] private float featherTime = 4f;
+    private bool isRunning;
+    // Start is called before the first frame update
+    void Awake()
    {
         player = gameObject.GetComponent<Transform>();
    }
@@ -38,22 +39,40 @@ public class ChickenController : MonoBehaviour
         {
             featherTime -= Time.deltaTime;
         }
+     
 
-       if (player.transform.position != lastPos && featherTime <= 0)
+       if (player.transform.position != lastPos && featherTime < 0)
        {
             Instantiate(feather, transform.position, transform.rotation);
             // If player has moved spawn feather
-            featherTime = 2f;
+
+            if(isRunning ==true)
+            {
+                featherTime = 1f;
+            }
+            else
+            {
+                featherTime = 4f;
+            }
+           
+
        }
-        Debug.Log(featherTime);
+
 
         lastPos = player.transform.position;
-      
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            speed = 50f;
+            isRunning = true;
+        }
+       else if (Input.GetKeyUp(KeyCode.Space))
+       {
+            speed = 10f;
+            isRunning = false;
+       }
+
     }
 
-   void FeatherSpawn()
-    {
-
-    }
 
 }
