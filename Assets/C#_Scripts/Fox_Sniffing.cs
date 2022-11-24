@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Fox_Sniffing : MonoBehaviour
 {
+    private Fox_AI _foxAI;
+    
     [SerializeField] private bool _prioritizeFeathersFurtherAway;
     [SerializeField] private float _sniffRadius;
     
@@ -19,6 +21,8 @@ public class Fox_Sniffing : MonoBehaviour
 
     private void Awake()
     {
+        _foxAI = GetComponent<Fox_AI>();
+        
         _feathers = new List<Feather>();
     }
 
