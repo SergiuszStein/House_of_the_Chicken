@@ -16,7 +16,7 @@ public class Fox_Sight : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Chicken"))
         {
-            _foxAI.ChickenDetected();
+            _foxAI.ChickenDetected(other.gameObject);
         }
     }
 }

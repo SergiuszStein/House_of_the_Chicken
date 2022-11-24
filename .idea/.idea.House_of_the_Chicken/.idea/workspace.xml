@@ -8,6 +8,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/C#_Scripts/Chicken_Death.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/C#_Scripts/Chicken_FeatherDropper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/C#_Scripts/Fox_Sniffing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/C#_Scripts/GodMode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -71,6 +73,7 @@
       <workItem from="1669198107996" duration="8196000" />
       <workItem from="1669211798149" duration="1867000" />
       <workItem from="1669282451773" duration="1067000" />
+      <workItem from="1669289691166" duration="7358000" />
     </task>
     <servers />
   </component>

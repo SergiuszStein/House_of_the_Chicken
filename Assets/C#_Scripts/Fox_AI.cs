@@ -21,8 +21,8 @@ public class Fox_AI : MonoBehaviour
         _foxCharacterController.Move(_foxSniffing.Get_SmellDirection());
     }
 
-    public void ChickenDetected()
+    public void ChickenDetected(GameObject chicken)
     {
-        
+        chicken.GetComponent<Chicken_Death>().Die();
     }
 }

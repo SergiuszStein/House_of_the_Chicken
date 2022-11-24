@@ -757,7 +757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8730365345485338281}
   - component: {fileID: 8120168786413909320}
-  - component: {fileID: 6679297763515382431}
+  - component: {fileID: 2606193444009839642}
   - component: {fileID: 6144574280787268920}
   - component: {fileID: 6010466035400445137}
   - component: {fileID: 106041626714091550}
@@ -797,25 +797,25 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1
-  m_Radius: 0.3
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_Radius: 0.5
+  m_SlopeLimit: 0
+  m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!65 &6679297763515382431
-BoxCollider:
+--- !u!135 &2606193444009839642
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618034758979384174}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_Material: {fileID: 13400000, guid: efe58e0ae7903bb468184f0fb4ba30df, type: 2}
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1.2}
-  m_Center: {x: 0, y: 0.5, z: 1}
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6144574280787268920
 MonoBehaviour:
   m_ObjectHideFlags: 0
