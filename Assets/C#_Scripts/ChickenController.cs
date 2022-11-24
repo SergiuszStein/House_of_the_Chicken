@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChickenController : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float boostSpeed;
     [SerializeField] private float rotationSpeed;
     [SerializeField] private GameObject feather;
     private Vector3 lastPos;
@@ -63,12 +64,12 @@ public class ChickenController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            speed = 50f;
+            speed = boostSpeed;
             isRunning = true;
         }
        else if (Input.GetKeyUp(KeyCode.Space))
        {
-            speed = 10f;
+            speed = speed;
             isRunning = false;
        }
 
