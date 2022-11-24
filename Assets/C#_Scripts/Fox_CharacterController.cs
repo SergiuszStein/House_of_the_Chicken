@@ -9,6 +9,8 @@ using UnityEngine.Timeline;
 
 public class Fox_CharacterController : MonoBehaviour
 {
+    private Fox_AI _foxAI;
+    
     private CharacterController _characterController;
     [SerializeField] private GameObject _model;
     [SerializeField] private float _speed;
@@ -16,6 +18,8 @@ public class Fox_CharacterController : MonoBehaviour
     
     private void Awake()
     {
+        _foxAI = GetComponent<Fox_AI>();
+        
         _characterController = GetComponent<CharacterController>();
     }
 
