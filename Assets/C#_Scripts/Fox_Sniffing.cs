@@ -55,11 +55,11 @@ public class Fox_Sniffing : MonoBehaviour
         {
             if (_prioritizeFeathersFurtherAway)
             {
-                _featherDirections.Add((_feathers[i].gameObject.transform.position - transform.position) * _feathers[i]._smell);
+                _featherDirections.Add((_feathers[i].gameObject.transform.position - transform.position) * (_feathers[i]._smell * _feathers[i]._smell));
             }
             else
             {
-                _featherDirections.Add(Vector3.Normalize(_feathers[i].gameObject.transform.position - transform.position) * _feathers[i]._smell);
+                _featherDirections.Add(Vector3.Normalize(_feathers[i].gameObject.transform.position - transform.position) * (_feathers[i]._smell * _feathers[i]._smell));
             }
         }
 
